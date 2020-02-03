@@ -1,0 +1,77 @@
+/*PROJECT BY SRINIKHIL YENIKE for the Webathon conducted by Progate, Inc.*/
+/* For Tablets */
+@media all and (max-width: 1000px) {
+.header-left {
+    margin-left: 0;
+}
+.header-right {
+    padding-right: 0;
+}
+.caption span {
+    font-size: 30px;
+    line-height: 75px; 
+}
+.caption1 span {
+    font-size: 40px;    
+}
+.quizimg caption {
+    font-size: 32px;
+}
+.lessons {
+    background-image: none;
+    background-color: rgb(35, 35, 35);
+}
+}
+
+/* For Smartphones */
+@media all and (max-width: 670px) {
+.header-left {
+    margin-left: 0;
+}
+.header-right {
+    display: none;
+}
+.lessons {
+    background-image: none;
+    background-color: rgb(35, 35, 35);
+}
+.menu-icon {
+    display: block;
+    color: green;
+}
+.bgimg-top {
+    text-align: left;
+}
+.caption1 span {
+    font-size: 20px;
+}
+.caption2 span {
+    font-size: 15px;
+    width: 25px;
+}
+.caption3 a {
+    font-size: 8px;
+    margin-left: -70px;
+    background-color: rgba(211, 160, 51, 0.822);
+}
+.caption3 a span {
+    color: red;
+}
+.caption span {
+    font-size: 20px;
+    line-height: 65px;
+}
+.output1 {
+    width: 300px;
+}
+
+footer {
+    text-align: center;
+}
+footer p {
+    margin-bottom: -40px;
+}
+form {
+    padding-top: -20px;
+}
+}

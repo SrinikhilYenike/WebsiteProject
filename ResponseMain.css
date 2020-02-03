@@ -1,0 +1,110 @@
+/*PROJECT BY SRINIKHIL YENIKE for the Webathon conducted by Progate, Inc.*/
+/* For Tablets */
+@media all and (max-width: 1000px) {
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: auto;
+    width:670px;
+}
+.header-left {
+    margin-left: 0;
+}
+.header-right {
+    padding-right: 100px;
+}
+.bgimg-top caption {
+    font-size: 32px;
+}
+.bgimg-2 caption {
+    font-size: 32px;
+}
+.bgimg-3 caption {
+    font-size: 32px;
+}
+.bgimg-4 caption {
+    font-size: 32px;
+}
+.bgimg-1 caption {
+    font-size: 32px;
+}
+.bgimg-1 .sign {
+    margin: 50px auto;
+    width: 150px;
+}
+.para1 {
+    font-size: 20px;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: 0;
+}
+}
+
+/* For Smartphones */
+@media all and (max-width: 670px) {
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: auto;
+    width:670px;
+}
+.header-left {
+    margin-left: 0;
+}
+.header-right {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+    color: green;
+}
+.bgimg-top {
+    text-align: left;
+}
+
+.bgimg-2 caption {
+    font-size: 24px;
+    line-height: 36px;
+}
+.bgimg-3 caption {
+    font-size: 24px;
+    line-height: 36px;
+}
+.bgimg-4 caption {
+    font-size: 24px;
+    line-height: 36px;
+}
+.bgimg-1 caption {
+    font-size: 24px;
+    line-height: 36px;
+}
+.bgimg-1 .sign {
+    margin: 50px auto;
+    width: 150px;
+}
+.banner-caption {
+    margin-bottom: 0px;
+    margin-right: 0;
+}
+.para1 p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.banner {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+footer p {
+    margin-bottom: -40px;
+}
+form {
+    padding-top: -20px;
+}
+}

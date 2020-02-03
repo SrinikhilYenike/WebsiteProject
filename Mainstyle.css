@@ -1,0 +1,281 @@
+/*PROJECT BY SRINIKHIL YENIKE for the Webathon conducted by Progate, Inc.*/
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    scroll-behavior: smooth;
+}
+header {
+    height: 65px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 91.5%;
+    z-index: 10;
+    transform: translate(0px,0px);
+    transition-duration: 300ms;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+  
+.logo {
+    width: 124px;
+    margin-top: 10px;
+    transition-duration: 2s;
+    display: inline-block;
+}
+.logo:hover {
+    animation: rotate 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotate {
+  50% { transform: scale(-1) translate(0px, 0px) rotate(180deg) scale(1.5);}
+  100% { transform: rotate(180deg) scale(-1)}
+}  
+.header-left {
+    padding-left: 20px;
+    float: left;
+}
+  
+.header-right {
+    float: right;
+    margin-right: -10px;
+}
+  
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 15px;
+    background-color: transparent;
+}
+.header-right:hover a {
+    transform: scale(1.5);   
+    opacity: 0.2;
+    filter: blur(5px);
+}  
+.header-right a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    background-color: tomato;
+}
+.bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+    background-image: url("1.jpg");
+    min-height: 1000px;
+    position: relative;
+    opacity: 0.75;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-icon {
+    display: none;
+    color: transparent;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+}
+.fa {
+    margin-right: 15px;
+}
+.bgimg-top {
+    background-image: url("1.jpg");
+    min-height: 100%;
+    position: relative;
+    opacity: 0.95;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-2 {
+    background-image: url("2.jfif");
+    min-height: 500px;
+}
+  
+.bgimg-3 {
+    background-image: url("3.1.jpeg");
+    min-height: 500px;
+}
+.bgimg-4 {
+    background-image: url("4.png");
+    min-height: 500px;
+}
+.para1 {
+    color: rgb(255, 255, 255);
+    background-color:#282E34;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    border: 0px solid #fff;
+    box-shadow: 0px 10px #888888;
+}
+h3 {
+    text-align:center;
+}
+.para1 h3:hover {
+    animation: rotate 3s;
+    animation-iteration-count: 1;
+}  
+.caption {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption1 {
+    position: absolute;
+    left: 0;
+    top: 0.25%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption1 span {
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    font-size: 55px;
+    letter-spacing: 0;
+    font-family: 'Great Vibes', cursive;
+    border-radius: 15%;
+    opacity: 1;
+    background: linear-gradient(rgba(255,255,255,1) 20%, transparent 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #000000;
+}
+/*.bgimg-top:hover > #caption1 {
+    transform: scale(1.5);
+    transition-duration: 2s;
+    transition-delay: 500ms;
+}*/  
+.caption span {
+    background-color: rgb(1, 170, 221);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+  
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+.title {
+    color: rgb(165, 2, 70);
+    font-size: 19px;
+    font-family: Impact;
+}
+.para1 h3 {
+    color: aqua;
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+}
+.border2 {
+    background-color:transparent;
+    font-size:25px;
+    color: #f7f7f7;
+}
+.border3 {
+    background-color:transparent;
+    font-size:25px;
+    color: #f7f7f7;
+}
+.banner {
+    position:relative;
+}
+.banner-caption {
+    color:#ddd;
+    background-color:#282E34;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+    box-shadow: 0px 10px #888888;
+}
+.banner-caption span {
+    color: aqua;
+}
+.emphasis {
+    color: rgb(118, 118, 255);
+}
+.banner-caption a {
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+}
+.bgimg-1 .sign {
+    background-image: url("sign.gif");
+    background-color: rgba(255, 253, 253, 0.658);
+    padding: 28px;
+    background-repeat: no-repeat;
+    margin: 50px 650px;
+    transform: scale(1.5);
+    border: 2px solid turquoise;
+}
+footer {
+    overflow: hidden;
+    background-color: #282E34;
+    
+}
+footer img {
+    display: block;
+    float: left;
+    transform: scale(1.5);
+    padding-top: 18px;
+    padding-left: 35px;
+}
+
+footer p {
+    float: left;
+    color: #b3aeb5;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-bottom: 18px;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+form {
+    padding-top: 35px;
+    float: right;
+}
+
+input[type="text"] {
+    color: whitesmoke;
+    background-color : rgba(255, 136, 0, 0.26);
+}
+button {
+    float: right;
+    padding: 10px;
+    margin: 0 16px;
+    background-color: rgb(105, 79, 255);
+    color: white;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+} 

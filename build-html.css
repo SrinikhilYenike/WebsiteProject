@@ -1,0 +1,270 @@
+/*PROJECT BY SRINIKHIL YENIKE for the Webathon conducted by Progate, Inc.*/
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+}
+header {
+    height: 65px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 91.5%;
+    z-index: 10;
+    transform: translate(0px,0px);
+    transition-duration: 300ms;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+  
+.logo {
+    width: 124px;
+    margin-top: 10px;
+    transition-duration: 2s;
+    display: inline-block;
+}
+.logo:hover {
+    animation: rotate 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotate {
+  50% { transform: scale(-1) translate(0px, 0px) rotate(180deg) scale(1.5);}
+  100% { transform: rotate(180deg) scale(-1)}
+}  
+.header-left {
+    padding-left: 20px;
+    float: left;
+}
+  
+.header-right {
+    float: right;
+    margin-right: -10px;
+}
+  
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: rgb(255, 183, 124);
+    display: block;
+    float: left;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+.header-right:hover a {
+    transform: scale(1.5);   
+    opacity: 0.2;
+    filter: blur(5px);
+}  
+.header-right a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    background-color: rgba(0,0,0,0.56);
+}
+.bgimg-top, .quizimg, .next {
+    background-image: url("build-html1.jfif");
+    min-height: 100%;
+    position: relative;
+    opacity: 0.95;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-icon {
+    display: none;
+    color: transparent;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+}
+.fa {
+    margin-right: 15px;
+}
+.quizimg {
+    background-image: url("quiz.jfif");
+    min-height: 500px;
+}
+.next {
+    background-image: url("comingsoon.png");
+    min-height: 1000px;
+}
+.caption1 {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption1 span {
+    color: rgb(0, 0, 0);
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 0;
+    font-family: 'Righteous', cursive;
+    border-radius: 15%;
+    opacity: 1;
+    background-color: rgba(255, 253, 253, 0.658);
+    border: 2px solid turquoise;
+    text-shadow: 2px 2px #77ddf7;
+}
+.lessons{
+    background-image: url("boxback1.jpg");
+    color: pink;
+    padding: 35px;
+    background-color: #5f5f5f;
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lessons span {
+    color: orange;
+    font-family: 'Righteous', cursive;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+.lessons p {
+    text-align: center;
+}
+.example {
+    width: 100%;
+    color: black;
+    padding: 1px;
+    background-color: #ddf7dc;
+}
+.example p {
+    padding: 0 35px;
+    background-color: #ddf7dc;
+    font-weight: bold;
+}
+.in {
+    background-color: rgb(248, 248, 248);
+    margin: 35px;
+    border-left: 4px solid rgb(87, 205, 241);
+    padding: 5px;
+    width: 50%;
+}
+.output {
+    display: block;
+    width: 50%;
+}
+.output1 {
+    margin: 35px;
+    border-left: 4px solid rgb(87, 205, 241);
+    padding: 5px;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span {
+    background-color: rgba(1, 170, 221, 0.651);
+    color: #fff;
+    padding: 18px;
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-family: 'Righteous', cursive;
+}
+.quiz {
+    background-color: turquoise;
+    padding: 25px;
+}
+.right:hover {
+    transition-duration: 1s;
+    transition-delay: 500ms;
+    background-color: green;
+}
+.wrong:hover {
+    transition-duration: 1s;
+    transition-delay: 500ms;
+    background-color: red;
+}
+footer {
+    overflow: hidden;
+    background-color: #282E34;
+    
+}
+footer img {
+    display: block;
+    float: left;
+    transform: scale(1.5);
+    padding-top: 18px;
+    padding-left: 35px;
+}
+
+footer p {
+float: left;
+color: #b3aeb5;
+padding-top: 20px;
+padding-left: 35px;
+padding-bottom: 18px;
+font-size: 20px;
+font-family: 'Righteous', cursive;
+}
+
+form {
+    padding-top: 35px;
+    float: right;
+}
+input[type="text"] {
+    color: whitesmoke;
+    background-color : rgba(255, 136, 0, 0.26);
+}
+form button {
+    float: right;
+    padding: 10px;
+    margin: 0 16px;
+    background-color: #555;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.caption2 {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption2 span {
+    background-color: rgba(1, 170, 221, 0.651);
+    color: #fff;
+    padding: 18px;
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-family: 'Righteous', cursive;;
+}
+.caption3 {
+    position: absolute;
+    left: 30%;
+    top: 45%;
+}
+.caption3 a {
+    text-decoration: none;
+    background-color: rgba(62, 182, 252, 0.555);
+    color: #8225E2;
+    padding:10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                0 3px 6px rgba(0,0,0,0.16);
+}
